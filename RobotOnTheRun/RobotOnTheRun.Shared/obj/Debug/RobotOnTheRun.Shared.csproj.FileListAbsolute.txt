@@ -1,0 +1,15 @@
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Shared\bin\Debug\RobotOnTheRun.Shared.dll.config
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Shared\bin\Debug\RobotOnTheRun.Shared.dll
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Shared\bin\Debug\RobotOnTheRun.Shared.pdb
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Shared\bin\Debug\EntityFramework.dll
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Shared\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Shared\bin\Debug\RobotOnTheRun.Domain.dll
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Shared\bin\Debug\RobotOnTheRun.Domain.pdb
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Shared\bin\Debug\RobotOnTheRun.Domain.dll.config
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Shared\bin\Debug\EntityFramework.xml
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Shared\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Shared\obj\Debug\RobotOnTheRun.Shared.csprojAssemblyReference.cache
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Shared\obj\Debug\RobotOnTheRun.Shared.csproj.CoreCompileInputs.cache
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Shared\obj\Debug\RobotOnTheRun.Shared.csproj.CopyComplete
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Shared\obj\Debug\RobotOnTheRun.Shared.dll
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Shared\obj\Debug\RobotOnTheRun.Shared.pdb

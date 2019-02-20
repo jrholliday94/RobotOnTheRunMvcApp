@@ -4,7 +4,7 @@ namespace RobotOnTheRun.Domain.Migrations
     using System;
     using System.Data.Entity.Migrations;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<PersonContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<RobotOnTheRun.Domain.PersonContext>
     {
         public Configuration()
         {
@@ -18,8 +18,10 @@ namespace RobotOnTheRun.Domain.Migrations
                 PersonId = Guid.Parse("84b4ecb4-569f-4b4e-b234-7c79fcd0a360"),
                 FirstName = "Jared",
                 LastName = "Holliday",
+                Gender = Enums.GenderEnum.Male,
                 DateCreated = DateTime.Today,
-                Email = "jrholliday@dmacc.edu"
+                Email = "jrholliday@dmacc.edu",
+                PhoneNumber = "5155374676"
             }
             );
 
@@ -28,8 +30,10 @@ namespace RobotOnTheRun.Domain.Migrations
                 PersonId = Guid.Parse("dc31053b-c68e-4e75-9b4d-805b6890ee26"),
                 FirstName = "Ben",
                 LastName = "Frederickson",
+                Gender = Enums.GenderEnum.Male,
                 DateCreated = DateTime.Today,
-                Email = "bfrederickson@dmacc.edu"
+                Email = "bfrederickson@dmacc.edu",
+                PhoneNumber = "5154731343"
             });
 
             context.Users.AddOrUpdate(new Person
@@ -37,8 +41,10 @@ namespace RobotOnTheRun.Domain.Migrations
                 PersonId = Guid.Parse("0354e35a-3a17-4008-8572-52cdfed9219b"),
                 FirstName = "Ian",
                 LastName = "Tibe",
+                Gender = Enums.GenderEnum.Male,
                 DateCreated = DateTime.Today,
-                Email = "imtibe@dmacc.edu"
+                Email = "imtibe@dmacc.edu",
+                PhoneNumber = "5159888555"
             });
 
 
@@ -56,7 +62,7 @@ namespace RobotOnTheRun.Domain.Migrations
                 PersonId = Guid.Parse("dc31053b-c68e-4e75-9b4d-805b6890ee26"),
                 Score = 400,
                 DateAttained = DateTime.Today
-             });
+            });
 
 
             context.Scores.AddOrUpdate(new HighScore

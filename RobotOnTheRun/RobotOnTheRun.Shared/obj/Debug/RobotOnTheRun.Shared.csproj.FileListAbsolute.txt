@@ -13,3 +13,9 @@ C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Shared\obj\Debug\RobotOn
 C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Shared\obj\Debug\RobotOnTheRun.Shared.csproj.CopyComplete
 C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Shared\obj\Debug\RobotOnTheRun.Shared.dll
 C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Shared\obj\Debug\RobotOnTheRun.Shared.pdb
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Shared\bin\Debug\Microsoft.Threading.Tasks.dll
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Shared\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Shared\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Shared\bin\Debug\Microsoft.Threading.Tasks.xml
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Shared\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Shared\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml

@@ -1,6 +1,7 @@
 ﻿using RobotOnTheRun.Shared.Orchestrators;
 using RobotOnTheRun.Shared.ViewModels;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using System.Web.Http;
 
 namespace RobotOnTheRun.Web.Api
@@ -17,7 +18,7 @@ namespace RobotOnTheRun.Web.Api
         }
 
         [HttpGet]
-        public List<PersonViewModel> GetAllPersons()
+        public Task<List<PersonViewModel>> GetAllPersons()
         {
             var persons = _personOrchestrator.GetAllPersons();
 

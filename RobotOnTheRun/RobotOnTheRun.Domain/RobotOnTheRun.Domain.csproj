@@ -50,9 +50,10 @@
   <ItemGroup>
     <Compile Include="Entities\HighScore.cs" />
     <Compile Include="Entities\Person.cs" />
-    <Compile Include="Migrations\201902112306353_InitialDBCreation.cs" />
-    <Compile Include="Migrations\201902112306353_InitialDBCreation.Designer.cs">
-      <DependentUpon>201902112306353_InitialDBCreation.cs</DependentUpon>
+    <Compile Include="Enums\GenderEnum.cs" />
+    <Compile Include="Migrations\201902202118380_InitialDbCreation.cs" />
+    <Compile Include="Migrations\201902202118380_InitialDbCreation.Designer.cs">
+      <DependentUpon>201902202118380_InitialDbCreation.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PersonContext.cs" />
@@ -63,8 +64,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201902112306353_InitialDBCreation.resx">
-      <DependentUpon>201902112306353_InitialDBCreation.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201902202118380_InitialDbCreation.resx">
+      <DependentUpon>201902202118380_InitialDbCreation.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

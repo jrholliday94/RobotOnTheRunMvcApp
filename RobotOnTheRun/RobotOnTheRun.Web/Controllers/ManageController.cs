@@ -64,6 +64,8 @@ namespace RobotOnTheRun.Web.Controllers
                 : "";
 
             var userId = User.Identity.GetUserId();
+            Session["userId"] = userId;
+
             var model = new IndexViewModel
             {
                 HasPassword = HasPassword(),

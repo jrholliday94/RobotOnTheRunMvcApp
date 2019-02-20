@@ -119,3 +119,9 @@ C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Web\bin\RobotOnTheRun.Sh
 C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Web\bin\RobotOnTheRun.Domain.pdb
 C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Web\bin\RobotOnTheRun.Domain.dll.config
 C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Web\obj\Release\RobotOnTheRun.Web.csprojAssemblyReference.cache
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Web\bin\Microsoft.Threading.Tasks.dll
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Web\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Web\bin\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Web\bin\Microsoft.Threading.Tasks.xml
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Web\bin\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Web\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml

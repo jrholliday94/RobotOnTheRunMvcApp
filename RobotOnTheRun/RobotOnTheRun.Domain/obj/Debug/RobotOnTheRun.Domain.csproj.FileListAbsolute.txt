@@ -24,5 +24,5 @@ C:\Users\ragna\Desktop\RobotOnTheRun\RobotOnTheRun.Domain\obj\Debug\RobotOnTheRu
 C:\Users\ragna\Desktop\RobotOnTheRun\RobotOnTheRun.Domain\obj\Debug\RobotOnTheRun.Domain.csproj.CopyComplete
 C:\Users\ragna\Desktop\RobotOnTheRun\RobotOnTheRun.Domain\obj\Debug\RobotOnTheRun.Domain.dll
 C:\Users\ragna\Desktop\RobotOnTheRun\RobotOnTheRun.Domain\obj\Debug\RobotOnTheRun.Domain.pdb
-C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Domain\obj\Debug\RobotOnTheRun.Domain.Migrations.InitialDbCreation.resources
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Domain\obj\Debug\RobotOnTheRun.Domain.Migrations.ErrorTableCreation.resources
 C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Domain\obj\Debug\RobotOnTheRun.Domain.csproj.GenerateResource.cache

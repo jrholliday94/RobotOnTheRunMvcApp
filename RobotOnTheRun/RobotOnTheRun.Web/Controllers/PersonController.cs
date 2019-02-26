@@ -7,6 +7,7 @@ using RobotOnTheRun.Shared.ViewModels;
 
 namespace RobotOnTheRun.Web.Controllers
 {
+    [ExceptionHandler]
     public class PersonController : Controller
     {
         private PersonOrchestrator _personOrchestrator = new PersonOrchestrator();
@@ -29,6 +30,11 @@ namespace RobotOnTheRun.Web.Controllers
             if (string.IsNullOrWhiteSpace(person.FirstName))
             {
                 return View();
+            }
+
+            if(person.DateCreated is null)
+            {
+                person.DateCreated = System.DateTime.Now;
             }
 
             var updatedCount = await _personOrchestrator.CreatePerson(new PersonViewModel
@@ -78,6 +84,35 @@ namespace RobotOnTheRun.Web.Controllers
             var viewModel = await _personOrchestrator.SearchPerson(parsedGuid);
 
             return Json(viewModel, JsonRequestBehavior.AllowGet);
+        }
+
+        protected async void OnExceptionAsync(ExceptionContext exception)
+        {
+            exception.ExceptionHandled = true;
+
+            ErrorOrchestrator errorOrch = new ErrorOrchestrator();
+
+            ErrorViewModel errorViewModel = new ErrorViewModel
+            {
+                ErrorId = Guid.NewGuid(),
+                ErrorDate = DateTime.Now,
+                StackTrace = exception.Exception.StackTrace,
+                ErrorMessage = exception.Exception.Message
+            };
+
+            if (exception.Exception.InnerException is null)
+            {
+                errorViewModel.InnerExceptions = "None";
+            }
+            else
+            {
+                errorViewModel.InnerExceptions = exception.Exception.InnerException.ToString();
+            }
+
+            await errorOrch.CreateErrorLog(errorViewModel);
+
+            exception.Result = RedirectToAction("Error", "Error");
+
         }
     }
 }

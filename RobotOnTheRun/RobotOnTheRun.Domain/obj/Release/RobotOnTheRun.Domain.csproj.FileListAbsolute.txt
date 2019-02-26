@@ -6,7 +6,6 @@ C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Domain\bin\Release\Entit
 C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Domain\bin\Release\EntityFramework.xml
 C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Domain\bin\Release\EntityFramework.SqlServer.xml
 C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Domain\obj\Release\RobotOnTheRun.Domain.csprojAssemblyReference.cache
-C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Domain\obj\Release\RobotOnTheRun.Domain.Migrations.InitialDBCreation.resources
 C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Domain\obj\Release\RobotOnTheRun.Domain.csproj.GenerateResource.cache
 C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Domain\obj\Release\RobotOnTheRun.Domain.csproj.CoreCompileInputs.cache
 C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Domain\obj\Release\RobotOnTheRun.Domain.csproj.CopyComplete
@@ -26,3 +25,4 @@ C:\Users\ragna\Desktop\RobotOnTheRun\RobotOnTheRun.Domain\obj\Release\RobotOnThe
 C:\Users\ragna\Desktop\RobotOnTheRun\RobotOnTheRun.Domain\obj\Release\RobotOnTheRun.Domain.csproj.CopyComplete
 C:\Users\ragna\Desktop\RobotOnTheRun\RobotOnTheRun.Domain\obj\Release\RobotOnTheRun.Domain.dll
 C:\Users\ragna\Desktop\RobotOnTheRun\RobotOnTheRun.Domain\obj\Release\RobotOnTheRun.Domain.pdb
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Domain\obj\Release\RobotOnTheRun.Domain.Migrations.ErrorTableCreation.resources

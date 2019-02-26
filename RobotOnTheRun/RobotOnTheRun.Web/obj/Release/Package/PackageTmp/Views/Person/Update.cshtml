@@ -8,14 +8,14 @@
     SearchPerson(search);
 </script>
 
-<div id="createProfile">
+<div id="createProfile" class="hidden">
     <p id="createProfile"> You have never updated your profile with information click here to do so!</p>
     @Html.ActionLink("[Update your profile]", "Create")
 </div>
 
 
 <input id="personId" type="hidden">
-<form name="personForm" onsubmit="UpdatePerson(search)" id="personForm">
+<form name="personForm" onsubmit="UpdatePerson(search)" id="personForm" class="hidden">
     <p>First Name: <input id="firstName" type="text" required></p>
     <p>Last Name: <input id="lastName" type="text" required></p>
     <p>

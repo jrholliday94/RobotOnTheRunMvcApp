@@ -1,9 +1,10 @@
-﻿using RobotOnTheRun.Shared.ViewModels;
+﻿using RobotOnTheRun.Shared.Orchestrators.Interfaces;
+using RobotOnTheRun.Shared.ViewModels;
 using System.Collections.Generic;
 
 namespace RobotOnTheRun.Shared.Orchestrators
 {
-    public class ProjectMemberOrchestrator
+    public class ProjectMemberOrchestrator : IProjectMemberOrchestrator
     {
 
 

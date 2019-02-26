@@ -1,5 +1,5 @@
-﻿using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
+using RobotOnTheRun.Web.Controllers;
 
 namespace RobotOnTheRun.Web
 {
@@ -7,7 +7,7 @@ namespace RobotOnTheRun.Web
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
-            filters.Add(new HandleErrorAttribute());
+            filters.Add(new ExceptionHandlerAttribute());
         }
     }
 }

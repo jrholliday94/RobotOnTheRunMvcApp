@@ -1,17 +1,18 @@
 ﻿using System;
-using System.Globalization;
 using System.Linq;
-using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
+using RobotOnTheRun.Shared.Orchestrators;
+using RobotOnTheRun.Shared.ViewModels;
 using RobotOnTheRun.Web.Models;
 
 namespace RobotOnTheRun.Web.Controllers
 {
+    [ExceptionHandler]
     [Authorize]
     public class AccountController : Controller
     {
@@ -22,7 +23,7 @@ namespace RobotOnTheRun.Web.Controllers
         {
         }
 
-        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
+        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager)
         {
             UserManager = userManager;
             SignInManager = signInManager;
@@ -34,9 +35,9 @@ namespace RobotOnTheRun.Web.Controllers
             {
                 return _signInManager ?? HttpContext.GetOwinContext().Get<ApplicationSignInManager>();
             }
-            private set 
-            { 
-                _signInManager = value; 
+            private set
+            {
+                _signInManager = value;
             }
         }
 
@@ -120,7 +121,7 @@ namespace RobotOnTheRun.Web.Controllers
             // If a user enters incorrect codes for a specified amount of time then the user account 
             // will be locked out for a specified amount of time. 
             // You can configure the account lockout settings in IdentityConfig
-            var result = await SignInManager.TwoFactorSignInAsync(model.Provider, model.Code, isPersistent:  model.RememberMe, rememberBrowser: model.RememberBrowser);
+            var result = await SignInManager.TwoFactorSignInAsync(model.Provider, model.Code, isPersistent: model.RememberMe, rememberBrowser: model.RememberBrowser);
             switch (result)
             {
                 case SignInStatus.Success:
@@ -155,8 +156,8 @@ namespace RobotOnTheRun.Web.Controllers
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
-                    await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
-                    
+                    await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
+
                     // For more information on how to enable account confirmation and password reset please visit https://go.microsoft.com/fwlink/?LinkID=320771
                     // Send an email with this link
                     // string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
@@ -481,5 +482,37 @@ namespace RobotOnTheRun.Web.Controllers
             }
         }
         #endregion
+
+        protected async void OnExceptionAsync(ExceptionContext exception)
+        {
+            exception.ExceptionHandled = true;
+
+            ErrorOrchestrator errorOrch = new ErrorOrchestrator();
+
+            ErrorViewModel errorViewModel = new ErrorViewModel
+            {
+                ErrorId = Guid.NewGuid(),
+                ErrorDate = DateTime.Now,
+                StackTrace = exception.Exception.StackTrace,
+                ErrorMessage = exception.Exception.Message
+            };
+
+            if (exception.Exception.InnerException is null)
+            {
+                errorViewModel.InnerExceptions = "None";
+            }
+            else
+            {
+                errorViewModel.InnerExceptions = exception.Exception.InnerException.ToString();
+            }
+
+            await errorOrch.CreateErrorLog(errorViewModel);
+
+            exception.Result = RedirectToAction("Error", "Error");
+
+        }
     }
 }
+
+
+

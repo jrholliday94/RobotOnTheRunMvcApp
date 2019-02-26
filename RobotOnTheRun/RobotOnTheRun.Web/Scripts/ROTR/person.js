@@ -1,6 +1,7 @@
 ﻿function SearchPerson(guid) {
     var search = guid;
 
+
     $.ajax({
         url: "Search",
         data: { searchGuid: search },
@@ -12,12 +13,15 @@
         $("#email").val(data.Email);
         $("#phoneNumber").val(data.PhoneNumber);
 
+
         if (data.FirstName == null) {
             document.getElementById("personForm").style.visibility = "hidden";
             document.getElementById("createProfile").style.visibility = "visible";
+            document.getElementById("createProfile").classList.remove("hidden");
         } else {
             document.getElementById("createProfile").style.visibility = "hidden";
             document.getElementById("personForm").style.visibility = "visible";
+            document.getElementById("personForm").classList.remove("hidden");
         }
 
         });

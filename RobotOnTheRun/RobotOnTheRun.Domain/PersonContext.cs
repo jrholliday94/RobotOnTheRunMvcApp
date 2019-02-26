@@ -7,5 +7,6 @@ namespace RobotOnTheRun.Domain
     {
         public DbSet<Person> Users { get; set; }
         public DbSet<HighScore> Scores { get; set; }
+        public DbSet<Error> Errors { get; set; }
     }
 }

@@ -1,11 +1,12 @@
 ﻿using RobotOnTheRun.Domain;
+using RobotOnTheRun.Shared.Orchestrators.Interfaces;
 using RobotOnTheRun.Shared.ViewModels;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace RobotOnTheRun.Shared.Orchestrators
 {
-    public class HighScoreOrchestrator
+    public class HighScoreOrchestrator : IHighScoreOrchestrator
     {
         private readonly PersonContext _personContext;
 

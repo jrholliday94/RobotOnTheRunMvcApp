@@ -6,10 +6,13 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
+using RobotOnTheRun.Shared.Orchestrators;
+using RobotOnTheRun.Shared.ViewModels;
 using RobotOnTheRun.Web.Models;
 
 namespace RobotOnTheRun.Web.Controllers
 {
+    [ExceptionHandler]
     [Authorize]
     public class ManageController : Controller
     {
@@ -386,6 +389,35 @@ namespace RobotOnTheRun.Web.Controllers
             Error
         }
 
-#endregion
+        #endregion
+
+        protected async void OnExceptionAsync(ExceptionContext exception)
+        {
+            exception.ExceptionHandled = true;
+
+            ErrorOrchestrator errorOrch = new ErrorOrchestrator();
+
+            ErrorViewModel errorViewModel = new ErrorViewModel
+            {
+                ErrorId = Guid.NewGuid(),
+                ErrorDate = DateTime.Now,
+                StackTrace = exception.Exception.StackTrace,
+                ErrorMessage = exception.Exception.Message
+            };
+
+            if (exception.Exception.InnerException is null)
+            {
+                errorViewModel.InnerExceptions = "None";
+            }
+            else
+            {
+                errorViewModel.InnerExceptions = exception.Exception.InnerException.ToString();
+            }
+
+            await errorOrch.CreateErrorLog(errorViewModel);
+
+            exception.Result = RedirectToAction("Error", "Error");
+
+        }
     }
 }

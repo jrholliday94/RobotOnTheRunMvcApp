@@ -1,4 +1,5 @@
 ﻿using RobotOnTheRun.Domain;
+using RobotOnTheRun.Shared.Orchestrators.Interfaces;
 using RobotOnTheRun.Shared.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -6,9 +7,9 @@ using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace RobotOnTheRun.Shared.Orchestrators
+namespace RobotOnTheRun.Shared.Orchestrators 
 {
-    public class PersonOrchestrator
+    public class PersonOrchestrator : IPersonOrchestrator
     {
         private readonly PersonContext _personContext;
 
@@ -100,6 +101,5 @@ namespace RobotOnTheRun.Shared.Orchestrators
 
             return true;
         }
-
     }
 }

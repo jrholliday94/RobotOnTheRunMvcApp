@@ -26,6 +26,7 @@ namespace RobotOnTheRun.Web.Controllers
         public ViewResult Missing()
         {
             Response.StatusCode = 404;
+            Response.TrySkipIisCustomErrors = true;
             return View("Missing");
         }
 

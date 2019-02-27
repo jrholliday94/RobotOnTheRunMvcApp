@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
@@ -18,6 +16,30 @@ namespace RobotOnTheRun.Web
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+        }
+
+        protected void Application_Error(object sender, EventArgs e)
+        {
+            var error = Server.GetLastError();
+            int statusCode;
+
+            if(error is HttpException)
+            {
+                statusCode = (error as HttpException).GetHttpCode();
+            }
+            else
+            {
+                statusCode = 500;
+            }
+
+            if (statusCode == 404)
+            {
+                Response.Redirect("/Error/Missing");
+            }
+            else
+            {
+                Response.Redirect("/Error/Error");
+            }
         }
     }
 }

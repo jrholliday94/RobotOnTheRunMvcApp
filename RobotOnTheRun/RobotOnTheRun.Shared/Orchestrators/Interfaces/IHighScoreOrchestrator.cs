@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace RobotOnTheRun.Shared.Orchestrators.Interfaces
 {
-    interface IHighScoreOrchestrator
+    public interface IHighScoreOrchestrator
     {
         List<HighScoreViewModel> GetAllHighScores();
     }       

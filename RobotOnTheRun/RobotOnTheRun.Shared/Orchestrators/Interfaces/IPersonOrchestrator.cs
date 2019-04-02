@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace RobotOnTheRun.Shared.Orchestrators.Interfaces
 {
-    interface IPersonOrchestrator
+    public interface IPersonOrchestrator
     {
         Task<int> CreatePerson(PersonViewModel person);
         Task<List<PersonViewModel>> GetAllPersons();

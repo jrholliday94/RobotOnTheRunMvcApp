@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace RobotOnTheRun.Shared.Orchestrators.Interfaces
 {
-    interface IProjectMemberOrchestrator
+    public interface IProjectMemberOrchestrator
     {
         List<ProjectMemberViewModel> GetAllProjectMembers();
     }

@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using System.Web.Mvc;
 using RobotOnTheRun.Domain;
 using RobotOnTheRun.Domain.Entities;
-using RobotOnTheRun.Shared.Orchestrators;
+using RobotOnTheRun.Shared.Orchestrators.Interfaces;
 using RobotOnTheRun.Shared.ViewModels;
 
 namespace RobotOnTheRun.Web.Controllers
@@ -11,7 +11,12 @@ namespace RobotOnTheRun.Web.Controllers
     [ExceptionHandler]
     public class ErrorController : Controller
     {
-        private ErrorOrchestrator _errorOrchestrator = new ErrorOrchestrator();
+        private readonly IErrorOrchestrator _errorOrchestrator;
+
+        public ErrorController(IErrorOrchestrator errorOrchestrator)
+        {
+            _errorOrchestrator = errorOrchestrator;
+        }
 
         public ViewResult Error()
         {

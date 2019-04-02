@@ -52,9 +52,9 @@
     <Compile Include="Entities\HighScore.cs" />
     <Compile Include="Entities\Person.cs" />
     <Compile Include="Enums\GenderEnum.cs" />
-    <Compile Include="Migrations\201902252303554_ErrorTableCreation.cs" />
-    <Compile Include="Migrations\201902252303554_ErrorTableCreation.Designer.cs">
-      <DependentUpon>201902252303554_ErrorTableCreation.cs</DependentUpon>
+    <Compile Include="Migrations\201904020042537_InitialDbCreation.cs" />
+    <Compile Include="Migrations\201904020042537_InitialDbCreation.Designer.cs">
+      <DependentUpon>201904020042537_InitialDbCreation.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PersonContext.cs" />
@@ -65,8 +65,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201902252303554_ErrorTableCreation.resx">
-      <DependentUpon>201902252303554_ErrorTableCreation.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201904020042537_InitialDbCreation.resx">
+      <DependentUpon>201904020042537_InitialDbCreation.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

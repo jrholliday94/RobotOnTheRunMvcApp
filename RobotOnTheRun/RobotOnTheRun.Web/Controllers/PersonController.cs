@@ -1,4 +1,5 @@
 ﻿using RobotOnTheRun.Shared.Orchestrators;
+using RobotOnTheRun.Shared.Orchestrators.Interfaces;
 using RobotOnTheRun.Web.Models;
 using System.Threading.Tasks;
 using System.Web.Mvc;
@@ -10,7 +11,12 @@ namespace RobotOnTheRun.Web.Controllers
     [ExceptionHandler]
     public class PersonController : Controller
     {
-        private PersonOrchestrator _personOrchestrator = new PersonOrchestrator();
+        private readonly IPersonOrchestrator _personOrchestrator;
+
+        public PersonController(IPersonOrchestrator personOrchestrator)
+        {
+            _personOrchestrator = personOrchestrator;
+        }
 
         // GET: Person
         public async Task<ActionResult> Index()

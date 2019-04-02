@@ -125,3 +125,12 @@ C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Web\bin\Microsoft.Thread
 C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Web\bin\Microsoft.Threading.Tasks.xml
 C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Web\bin\Microsoft.Threading.Tasks.Extensions.xml
 C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Web\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Web\bin\Ninject.dll
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Web\bin\Ninject.Web.Common.dll
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Web\bin\Ninject.Web.Common.WebHost.dll
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Web\bin\Ninject.Web.Mvc.dll
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Web\bin\WebActivatorEx.dll
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Web\bin\Ninject.xml
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Web\bin\Ninject.Web.Common.xml
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Web\bin\Ninject.Web.Common.WebHost.xml
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Web\bin\Ninject.Web.Mvc.xml

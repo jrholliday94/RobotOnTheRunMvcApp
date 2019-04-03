@@ -134,3 +134,5 @@ C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Web\bin\Ninject.xml
 C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Web\bin\Ninject.Web.Common.xml
 C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Web\bin\Ninject.Web.Common.WebHost.xml
 C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Web\bin\Ninject.Web.Mvc.xml
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Web\bin\Ninject.Extensions.ChildKernel.dll
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Web\bin\Ninject.Extensions.ChildKernel.xml

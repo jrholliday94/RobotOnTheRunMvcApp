@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotOnTheRun.Shared", "Rob
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotOnTheRun.Domain", "RobotOnTheRun.Domain\RobotOnTheRun.Domain.csproj", "{F15A7640-8124-417C-812F-01F0D25D4C87}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotOnTheRun.Test", "RobotOnTheRun.Test\RobotOnTheRun.Test.csproj", "{47385336-EDB9-479D-91C6-C1115C3099BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F15A7640-8124-417C-812F-01F0D25D4C87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F15A7640-8124-417C-812F-01F0D25D4C87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F15A7640-8124-417C-812F-01F0D25D4C87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47385336-EDB9-479D-91C6-C1115C3099BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47385336-EDB9-479D-91C6-C1115C3099BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47385336-EDB9-479D-91C6-C1115C3099BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47385336-EDB9-479D-91C6-C1115C3099BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

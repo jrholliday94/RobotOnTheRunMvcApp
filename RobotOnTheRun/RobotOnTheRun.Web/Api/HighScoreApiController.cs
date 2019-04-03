@@ -1,4 +1,5 @@
-﻿using RobotOnTheRun.Shared.Orchestrators.Interfaces;
+﻿using RobotOnTheRun.Shared.Orchestrators;
+using RobotOnTheRun.Shared.Orchestrators.Interfaces;
 using RobotOnTheRun.Shared.ViewModels;
 using System.Collections.Generic;
 using System.Web.Http;
@@ -16,9 +17,9 @@ namespace RobotOnTheRun.Web.Api
         }
 
         [HttpGet]
-        public List<HighScoreViewModel> GetHighScores()
+        public List<HighScoreViewModel> GetAllScores()
         {
-            var scores = _highScoreOrchestrator.GetAllHighScores();
+            var scores = _highScoreOrchestrator.GetAllScores();
 
             return scores;
         }

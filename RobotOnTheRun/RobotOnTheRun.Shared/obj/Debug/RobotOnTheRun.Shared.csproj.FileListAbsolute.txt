@@ -19,3 +19,5 @@ C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Shared\bin\Debug\Microso
 C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Shared\bin\Debug\Microsoft.Threading.Tasks.xml
 C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Shared\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
 C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Shared\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Shared\bin\Debug\Ninject.dll
+C:\Users\ragna\source\repos\RobotOnTheRun\RobotOnTheRun.Shared\bin\Debug\Ninject.xml

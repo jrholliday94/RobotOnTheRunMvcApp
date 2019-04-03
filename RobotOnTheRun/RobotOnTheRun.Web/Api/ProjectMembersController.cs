@@ -1,4 +1,4 @@
-﻿using RobotOnTheRun.Shared.Orchestrators;
+﻿using RobotOnTheRun.Shared.Orchestrators.Interfaces;
 using RobotOnTheRun.Shared.ViewModels;
 using System.Collections.Generic;
 using System.Web.Http;
@@ -8,11 +8,11 @@ namespace RobotOnTheRun.Web.Api
     [Route("api/v1/members")]
     public class ProjectMembersController : ApiController
     {
-        private readonly ProjectMemberOrchestrator _projectMemberOrchestrator;
+        private readonly IProjectMemberOrchestrator _projectMemberOrchestrator;
 
-        public ProjectMembersController()
+        public ProjectMembersController(IProjectMemberOrchestrator projectMemberOrchestrator)
         {
-            _projectMemberOrchestrator = new ProjectMemberOrchestrator();
+            _projectMemberOrchestrator = projectMemberOrchestrator;
         }
 
         [HttpGet]

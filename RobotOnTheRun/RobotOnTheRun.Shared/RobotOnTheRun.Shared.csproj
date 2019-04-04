@@ -70,6 +70,8 @@
     <Compile Include="Orchestrators\PersonOrchestrator.cs" />
     <Compile Include="Orchestrators\ProjectMemberOrchestrator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\HighScoreService.cs" />
+    <Compile Include="Services\Interfaces\IHighScoreService.cs" />
     <Compile Include="ViewModels\ErrorViewModel.cs" />
     <Compile Include="ViewModels\HighScoreViewModel.cs" />
     <Compile Include="ViewModels\PersonViewModel.cs" />
